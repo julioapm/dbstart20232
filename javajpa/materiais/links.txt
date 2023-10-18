@@ -1,0 +1,14 @@
+Spring Framework Data Access
+https://docs.spring.io/spring-framework/reference/data-access.html
+
+Spring Data
+https://docs.spring.io/spring-data/commons/docs/current/reference/html/
+https://docs.spring.io/spring-data/commons/docs/current/api/
+
+Spring Data JPA
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/
+https://docs.spring.io/spring-data/jpa/docs/current/api/
+
+JPA
+https://jakarta.ee/specifications/persistence/
+
