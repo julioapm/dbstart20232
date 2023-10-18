@@ -16,8 +16,9 @@ public class PessoaRepositorioJpa implements PessoaRepositorio {
 
     @Override
     public List<Pessoa> buscarTodos() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buscarTodos'");
+        return em
+                .createQuery("from Pessoa p", Pessoa.class)
+                .getResultList();
     }
 
     @Override
@@ -33,14 +34,14 @@ public class PessoaRepositorioJpa implements PessoaRepositorio {
 
     @Override
     public Pessoa remover(long id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'remover'");
+        var p = em.find(Pessoa.class, id);
+        em.remove(p);
+        return p;
     }
 
     @Override
     public void alterar(Pessoa umaPessoa) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'alterar'");
+        em.merge(umaPessoa);
     }
     
 }
