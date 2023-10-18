@@ -6,8 +6,10 @@ import org.springframework.stereotype.Repository;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import jakarta.transaction.Transactional;
 
 @Repository
+@Transactional
 public class PessoaRepositorioJpa implements PessoaRepositorio {
     @PersistenceContext
     private EntityManager em;
@@ -20,14 +22,13 @@ public class PessoaRepositorioJpa implements PessoaRepositorio {
 
     @Override
     public Pessoa buscarPorId(long id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buscarPorId'");
+        return em.find(Pessoa.class, id);
     }
 
     @Override
     public Pessoa inserir(Pessoa umaPessoa) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'inserir'");
+        em.persist(umaPessoa);
+        return umaPessoa;
     }
 
     @Override
