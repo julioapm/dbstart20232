@@ -44,4 +44,9 @@ public class Venda {
         }
         return somatorio;
     }
+    @Override
+    public String toString() {
+        return "Venda [id=" + id + ", itensDeVenda=" + itensDeVenda + ", data=" + data + "]";
+    }
+
 }
