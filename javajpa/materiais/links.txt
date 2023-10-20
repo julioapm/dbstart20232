@@ -11,4 +11,16 @@ https://docs.spring.io/spring-data/jpa/docs/current/api/
 
 JPA
 https://jakarta.ee/specifications/persistence/
+https://projects.eclipse.org/projects/ee4j.jpa
 
+Hibernate ORM
+https://hibernate.org/orm/
+
+JTA
+https://jakarta.ee/specifications/transactions/
+https://projects.eclipse.org/projects/ee4j.jta
+
+JEE
+https://jakarta.ee/
+https://projects.eclipse.org/projects/ee4j
+https://eclipse-ee4j.github.io/jakartaee-tutorial/
